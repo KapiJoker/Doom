@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "WASM DOOM Ultimate Bundle",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs"],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "game_classic.html",
+        "game_engine.js",
+        "game_d3.html",
+        "config_classic.js",
+        "config_d3.js",
+        "doom.js",
+        "doom.wasm",
+        "d3wasm.js",
+        "d3wasm.wasm",
+        "demo_bootstrap.js",
+        "demo_game00.js",
+        "demo_game01.js",
+        "demo_bootstrap.data",
+        "demo_game00.data",
+        "demo_game01.data",
+        "doom1.wad",
+        "doom2.wad"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  }
+}
